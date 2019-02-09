@@ -1,0 +1,7 @@
+#Config
+package-lock.json
+jsconfig.json
+*.log
+
+#Folders
+/node_modules

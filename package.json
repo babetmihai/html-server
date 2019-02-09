@@ -1,0 +1,20 @@
+{
+  "name": "test-server",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Mihai Babet",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.4.0",
+    "eslint-plugin-node": "^6.0.0"
+  },
+  "dependencies": {
+    "compression": "^1.7.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.2"
+  },
+  "description": ""
+}
