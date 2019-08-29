@@ -10,17 +10,18 @@ const readFile = util.promisify(fs.readFile)
 
 const app = express()
 app.use(compression())
-app.use(express.static(path.join(__dirname, './build')))
 app.use(cors({
   origin: true,
   methods: ['GET', 'POST']
 }))
+
 app.get('/', async (_, res) => {
   const html = await readFile(path.resolve(__dirname, './build/index.html'), 'utf8')
   res.set('Content-Type', 'text/html')
   res.send(html)
   res.end()
 })
+app.use(express.static(path.join(__dirname, './build')))
 
 const { PORT = 8000 } = process.env
 app.listen(PORT, () => {
