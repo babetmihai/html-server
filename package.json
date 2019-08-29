@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "author": "Mihai Babet",
   "license": "ISC",
@@ -14,7 +14,8 @@
   "dependencies": {
     "compression": "^1.7.3",
     "cors": "^2.8.4",
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "nodemon": "^1.19.1"
   },
   "description": ""
 }
